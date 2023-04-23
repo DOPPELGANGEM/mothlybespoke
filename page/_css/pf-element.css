@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/* s : PF*/
+/* PF-element : best card */
+.best-card { position: relative; padding: 65px 60px 60px; border: 1px solid #ebebeb; border-radius: 20px; }
+.best-card .card-main-tit { position: absolute; top:0; left:50%; transform: translate(-50%, -50%); padding: 0 24px; background: #fff;; font-size: 36px; line-height: 48px; color: #000; letter-spacing: 0.1em; font-family: "Samsung Sharp Sans"; }
+.best-card .card-wrap { display: flex; justify-content: center; }
+.best-card .card-wrap:after { content:''; display: block; clear: both;}
+.best-card .card-con { position: relative; display: inline-block; float: left; width: calc(100% / 3 - 60px); max-width: 290px; min-height: 437px; }
+.best-card .card-con ~ .card-con { margin-left: 60px; }
+.best-card .card-con:first-child{ margin-left: 0; }
+.best-card .card-con:first-child:before { content:''; display: block; position: absolute; bottom: 0; width: 100%; height: 324px; background: url('http://samsung.com/sec/static/_images/temp/best-bg.svg') no-repeat; border-radius: 20px; z-index: -1; }
+.best-card .card-con:first-child .best-top span { padding-left: 2px; color: #1428A0; }
+.best-card .card-con:first-child .best-top span + span { padding-left: 0; color: #1428A0; }
+.best-card .card-con .best-top span { padding-left: 5px; font-size: 14px; line-height: 18px; font-weight: bold; color: #000; }
+.best-card .card-con .best-top span:first-child { display: block; }
+.best-card .card-con .best-top span + span { padding-left: 0; font-size: 30px; line-height: 32px; font-family: "Samsung Sharp Sans"; letter-spacing: 0; }
+.best-card .card-con .best-top .btn-good { position: absolute; top: 10px; right: 0; }
+.best-card .card-con .best-mid { margin-top: -17px; text-align: center; }
+.best-card .card-con .best-bottom { text-align: center; }
+.best-card .card-con .best-bottom a { display: block; padding: 24px 40px 9px; }
+.best-card .card-con .best-bottom a  em { display: block; margin-bottom: 2px; font-size: 24px; line-height: 31px; color: #000; font-weight: bold; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.best-card .card-con .best-bottom a  span { font-size: 14px; line-height: 18px; color: #707070; }
+.best-card .card-con .best-bottom .best-price { position: absolute; left: 50%; bottom: 37px; transform: translateX(-50%); font-size: 16px; line-height: 32px; color: #000; font-weight: bold; font-family: "Samsung Sharp Sans";  }
+.best-card .card-con .best-bottom .best-price em { font-size: 24px; color: #000; font-weight: bold; font-family: "Samsung Sharp Sans";  }
+
+/* PF-element : Disclaimer */
+.disclaimer ul li { font-size: 12px; ; line-height: 16px; color: #707070; }
+.disclaimer ul li ~ li { margin-bottom: 16px; }
+.disclaimer ul li:last-child { margin-bottom: 0; }
+
+/* PF-element : pf-banner */
+.black-banner { padding: 46px 72px; width: 100%; height:260px; background:#000 url('http://samsung.com/sec/static/_images/temp/web-pf-banner.svg') no-repeat right; border-radius: 20px; }
+.black-banner > div > p:nth-child(1) { font-size: 14px; line-height: 18px; color: #fff;  font-weight: bold; }
+.black-banner > div > p:nth-child(2) { margin: 5px 0 13px; font-size: 30px; line-height: 40px; color: #fff; font-weight: bold; }
+.black-banner > div > p + span { font-size: 14px; line-height: 18px; color: #fff; }
+.black-banner > button { margin-top: 31px; background-color: #000; border-color: #fff; }
+
+ /* PF-element : product-card */
+.product-card { position: relative; display: inline-block; padding: 36px 30px 204px 30px; width: 350px; height: auto; background: #f7f7f7; border-radius: 20px; }
+.product-card .card-option a { display: block; width:100%; height: 100%; }
+.card-top { position: relative; padding-bottom: 10px; }
+.card-top > span { display: inline-block; font-size: 14px; line-height: 26px; color: #1428A0; font-weight: bold; }
+.card-top span ~ span:before { content: ''; display: inline-block; margin: 0 10px; width: 1px; height: 12px; background: #d9d9d9; vertical-align: middle; }
+.card-top .ico-goods { position: absolute; top: 0; right: 0; background-color: #fafafa; }
+
+/* PF-element : product-card color */
+.card-images { margin-bottom: 24px; }
+.p-type-area ~ .p-type-area  { margin-top: 16px; }
+.card-color { text-align: center; }
+.card-color .itm-color-list { display:inline-block; }
+.card-color .itm-color-list:after {content: '';display: block; clear:both;}
+.card-color .itm-color-list li{float:left;}
+.card-color .itm-color-list li a{display:block;}
+.card-color .itm-color-list .itm-color-object:before { display: none; }
+.card-color .itm-color-list li input[type="radio"]:checked + label .itm-color-object:after{content:'';position:absolute;left:-3px;top:-3px;width:20px;height:20px;border:1px solid #000;border-radius:50%;}
+.card-color .itm-color-list label { height: 22px; }
+
+/* PF-element : product-card filter */
+.itm-filter-list { text-align: center; }
+.itm-filter-list .max-three li { display: inline-block; margin: 0 4px; }
+.filter-slick { padding: 0 28px;  }
+.itm-filter-list .filterBtnBox a.btn,
+.filterBtnBox a.btn-filter,
+.filterBtnBox label { display: inline-block; padding: 0 10px; min-width: 70px; width: auto; height: 28px; background: rgba(0,0,0,.1);border-radius: 14px; border: 0; cursor: pointer; }
+.filterBtnBox label span { font-size: 14px; line-height: 28px; font-weight: 400; color: #000; }
+.filterBtnBox label:hover,
+.filterBtnBox label.focus,
+.filterBtnBox input[type="radio"]:checked + label { background: rgba(255,255,255,1); color: #000; box-shadow: 0 0 0 1px #000 inset; }
+.filterBtnBox .slick-arrow{position:absolute;top:0px;width:24px;height:28px;text-indent:-9999px;}
+.filterBtnBox .slick-prev{left:0px;background:url('http://samsung.com/sec/static/_images/common/icon-slick-prev.svg') center center no-repeat;}
+.filterBtnBox .slick-next{right:0px;background:url('http://samsung.com/sec/static/_images/common/icon-slick-next.svg') center center no-repeat;}
+.filterBtnBox input[type="radio"] { display: none; }
+
+/* PF-element : product-card option */
+.card-option-choice dl { position: relative } 
+.card-option-choice dl + dl { margin-top: 16px; }
+.card-option-choice dt { position: absolute; left: 16px; top: 0; font-size: 14px; line-height: 18px; color: #000; } 
+.card-option-choice dd { text-align: right; }
+.card-option-choice .wrap-droplist { padding: 0 16px; }
+.wrap-droplist.cardwrap-droplist .droplist-button { border: 0; background-color: transparent; position: relative; display: block; height: 18px; padding-right: 26.4px; font-size: 16px; line-height: 18px; color: #151515; font-weight: bold; min-height: 18px; }
+.wrap-droplist.cardwrap-droplist .droplist-button { display: block; line-height: 18px; text-align: right; }
+.wrap-droplist.cardwrap-droplist .droplist-button:before { content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); margin: 0; width: 16px; height: 16px; background: url(http://samsung.com/sec/static/_images/common/icon-drop-down-pd.svg) center center no-repeat; }
+.wrap-droplist.cardwrap-droplist.active .droplist-button:before { background-image: url(http://samsung.com/sec/static/_images/common/icon-drop-up-pd.svg); }
+.cardwrap-droplist li:after { content: ''; display: block; clear: both; }
+.cardwrap-droplist.disable { pointer-events: none; }
+.cardwrap-droplist.disable .droplist-button:before { opacity: 0.4; }
+
+/* PF-element : product-card info */
+.card-info { position: relative; margin-top: 24px; min-height:152px; text-align: center; }
+.card-info .bott-fix { position: absolute; bottom: 0; width: 100%; }
+.card-info .info-tit { margin-top: 24px; margin-bottom: 2px; font-size: 24px; line-height: 31px; color: #000; font-weight: bold; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.card-info .info-model { font-size: 14px; line-height: 18px; color: #707070; }
+.card-info .info-price { margin-bottom: 6px; }
+.card-info .info-price span:nth-child(1) { display: inline-block; font-size: 16px; line-height: 21px; color: #707070; font-weight: bold; text-decoration: line-through;  font-family: "Samsung Sharp Sans"; }
+.card-info .info-price span:nth-child(2) { display: inline-block; height:32px; font-size: 16px; line-height: 32px; color: #000; font-weight: bold; vertical-align: baseline; font-family: "Samsung Sharp Sans"; }
+.card-info .info-price span:nth-child(2) > em { display: inline-block; padding-left: 3px; font-size: 24px; line-height: 32px; color: #000; font-weight: bold; font-family: "Samsung Sharp Sans"; }
+.info-price button { background-color: transparent; vertical-align: text-bottom; }
+.btn-downTooltip > span { display: inline-block; margin: 0 4px; width: 14px; height: 14px; text-indent: -9999px; background: url(http://samsung.com/sec/static/_images/common/icon-tooltip-down.svg) no-repeat center; }
+.card-info .info-point span { font-size: 14px; line-height: 18px; color: #000; }
+.card-info .info-point span > em { padding-left: 10px; font-size: 14px; line-height: 18px; color: #0077C8; font-weight: bold; }
+.fix-bottom { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); width: 100%; padding: 0 30px; }
+.fix-bottom .btn-d { margin: 16px 0 12px; width: 100%; }
+
+/* PF-element : product-card spec */
+.card-spec ul { display: flex; justify-content: center; }
+.card-spec ul li:first-child { max-width: 74px; }
+.card-spec li ~ li { padding-left: 21px; max-width: 95px; }
+.card-spec li:before { content:''; display: block; margin: 0 auto 8px; width: 28.66px; height: 20.39px; }
+.card-spec li:nth-child(1):before { background: url(http://samsung.com/sec/static/_images/common/icon-spec01.svg) no-repeat center; }
+.card-spec li:nth-child(2):before { background: url(http://samsung.com/sec/static/_images/common/icon-spec02.svg) no-repeat center; }
+.card-spec li:nth-child(3):before { background: url(http://samsung.com/sec/static/_images/common/icon-spec03.svg) no-repeat center; }
+.card-spec li span { font-size: 12px; line-height: 15px; color: #707070; text-align: center; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-break: keep-all; }
+
+/* PF-element : product-card bottom compare */
+.card-compare:before { content:''; display: block; margin: 12px 0 16px; width: 100%; height: 1px; background: #dedede; }
+.card-compare:after { content:''; display: block; clear: both; }
+.ico-compare { width:23px; height: 16px; background: url(http://samsung.com/sec/static/_images/common/icon-compare.svg) no-repeat center; }
+.itm-compare { float: left; }
+.itm-compare a span { font-size: 14px; line-height: 18px; color: #000; font-weight: bold; vertical-align: bottom; }
+.itm-rating2 { float:right; }
+.itm-rating2 i.ico-star { vertical-align: top; }
+.itm-rating2 a { font-size: 14px; line-height: 18px; color: #000; }
+.itm-rating2 a span { font-size: 14px; line-height: 18px; color: #000; font-weight: bold; vertical-align: text-bottom; }
+.itm-rating2 a:hover { text-decoration: underline; }
+
+/* PF-left filter */
+.item-filter-wrap { width: 236px; height: auto; }
+.left-filter > div { border-top: 1px solid #D9D9D9; }
+.left-filter > div:last-child { border-bottom: 1px solid #D9D9D9; }
+.left-filter > div .dropButton { position: relative; display: block; padding: 30px 0; font-size: 18px; line-height: 23px; color: #000; font-weight: bold; letter-spacing: -0.01em; }
+.left-filter > div .dropButton:after { content:''; display: block; position: absolute; top: 50%; right: 6px; transform: translateY(-50%); width: 16px; height: 16px; background: url(http://samsung.com/sec/static/_images/common/icon-plus-filter.svg) no-repeat center; }
+.left-filter > div .dropButton.active:after { content:''; display: block; width: 16px; height: 16px; background: url(http://samsung.com/sec/static/_images/common/icon-minus-filter.svg) no-repeat center; }
+.left-filter .list-box { padding-bottom: 15px; }
+.left-filter .list-box ul.chk-form { max-height: 235px; overflow: hidden; }
+.left-filter .list-box ul.chk-form.active { max-height: 100%; }
+.left-filter .list-box ul > li { padding: 15px 0;}
+.left-filter .list-box ul > li:first-child { padding-top: 0;}
+.left-filter .list-box ul > li label { width: 100%; cursor: pointer; }
+.left-filter .list-box button { display: block; padding: 15px 0 ; width: 100%; background-color: transparent; font-size: 14px; line-height: 18px; color: #1428A1; font-weight: bold; text-align: left; letter-spacing: -0.01em; }
+.left-filter .list-box { display: none; }
+.left-filter > div a.active + .list-box { display: block; }
+
+.range-area { display: table; padding-bottom: 30px; width: 100%; height: 100%; }
+.range-box { position: relative; display: table-cell; padding-bottom: 30px; vertical-align: middle; text-align: center;}
+.range-box .range-price { position: absolute; bottom: 0; width: 100%; }
+.range-box .range-price span { font-size: 14px; line-height: 18px; color: #000; }
+.range-box .range-price span:nth-child(1) { float: left;}
+.range-box .range-price span:nth-child(2) { float: right;}
+.range-box .range-price:after { content: ''; display: block; clear: both; }
+.range-box .slider-wrapper { width: 100%; display: inline-block; position: relative; font-family: arial; }
+.range-box .ui-slider { background: #d9d9d9;  height: 5px; position: relative; border-radius: 5px; }
+.range-box .ui-widget.ui-widget-content { box-shadow: none; }
+.range-box .ui-slider-range {  background: #000; height: 20px; position: absolute; border-top: 1px solid #5d99c8; border-bottom: 1px solid #5d99c8; transform: translateY(-1px); }
+.range-box .ui-slider-range:after { content: ''; width: 100%; height: 1px; background: #fff; position: absolute; top: 0; left: 0; opacity: 0.3; }
+.range-box .ui-state-default, 
+.range-box .ui-widget-content .ui-state-default .ui-slider-handle { background: #fff !important; position: absolute !important; width: 12px !important; height: 12px !important;  display: block;  border: 1px solid #000 !important; border-radius: 50%; }
+.range-box .ui-slider-horizontal .ui-slider-handle { margin-left: 0;  cursor: pointer; }
+.list-box.price { padding-bottom: 0; }
+/* e : PF*/

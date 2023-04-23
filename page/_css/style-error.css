@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:'SamsungOneKorean';
+    font-style:normal;
+    font-weight:normal;
+    src:url('../_font/SamsungOneKorean-400.eot');
+    src:url('../_font/SamsungOneKorean-400.eot?#iefix') format("embedded-opentype"),
+        url('../_font/SamsungOneKorean-400.woff2') format("woff2"),
+        url('../_font/SamsungOneKorean-400.woff') format("woff"),
+        url('../_font/SamsungOneKorean-400.ttf') format("truetype");
+}
+@font-face {
+    font-family:'SamsungOneKorean';
+    font-style:normal;
+    font-weight:bold;
+    src:url('../_font/SamsungOneKorean-700.eot');
+    src:url('../_font/SamsungOneKorean-700.eot?#iefix') format("embedded-opentype"),
+        url('../_font/SamsungOneKorean-700.woff2') format("woff2"),
+        url('../_font/SamsungOneKorean-700.woff') format("woff"),
+        url('../_font/SamsungOneKorean-700.ttf') format("truetype");320
+
+}
+
+/*** reset ***/
+html,body { min-height:100%; }
+html, body, div, h1, h2, h3, h4, h5, h6, span, object, iframe,
+ p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, a,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, textarea, select,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary, button,
+time, mark, audio, video {
+    margin:0; padding:0; border:0; outline:0; font-family:'SamsungOneKorean','dotum',sans-serif; letter-spacing:-0.02em; vertical-align:baseline; background:transparent;
+    box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+body {
+    line-height:1; -webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none;
+    -webkit-font-smooting:antialiased; -moz-font-smoothing:grayscale;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+em { font-style:normal; }
+span, strong, input, select { vertical-align:middle; }
+strong { font-weight:bold; }
+img { max-width:100%; vertical-align:top; }
+
+@media all and (max-width:1440px) and (min-width:1101px){
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i, a,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, button,
+    time, mark, audio, video { font-size:1.1111vw; }
+}
+
+@media all and (max-width:1100px) and (min-width:801px){
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i, a,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, button,
+    time, mark, audio, video { font-size:1.4545vw; }
+}
+
+@media all and (max-width:800px){
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i, a,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, button,
+    time, mark, audio, video { font-size:16px; }
+}
+
+
+/*** content ***/
+#skip-content { position:absolute; display:block; left:0; right:0; top:0; width:100%; height:0; z-index:100; }
+#skip-content > a { position:absolute; display:block; left:0; top:-999px; width:100%; padding:10px 0; color:#fff; text-align:center; background:#333; overflow:hidden; }
+#skip-content .on { top:0; }
+
+/* 헤더 */
+#header { position:relative; width:100%; height:80px; margin:0 auto; border-bottom:1px solid #ebebeb; background:#fff;z-index:101;}
+#header .s-inner { max-width:1440px; margin:0 auto; padding:0 24px; }
+#header .s-inner:after { display:block; content:""; clear:both; }
+#header .logo { position:relative; display:block; float:left; width:100%; max-width:96px; height:80px; margin-right:40px;z-index:20;}
+#header .logo > img { position:absolute; left:0; top:50%; transform:translateY(-50%); }
+#header .logoCollabo { position:relative; float:left; height:80px; margin-right:40px; display:flex; align-items:center;}
+#header .logoCollabo span{display:inline-block;}
+#header .logoCollabo .crossIcon{width:1px;height:28px;margin:0 15px;background-color:#000;}
+#header .logoCollabo .lastLogo{height:19px;}
+#header .logoCollabo .lastLogo img{height:100%;}
+
+.blind{display:block;overflow:hidden;position:absolute;top:-1000em;left:0}
+
+/* 푸터 */
+#footer .footer-content { border-top:1px solid #d9d9d9; }
+#footer .footer-content:last-child .footer-inner { padding-bottom:36px; }
+#footer .footer-inner { position:relative; max-width:1440px; margin:0 auto; padding:36px 24px; }
+#footer .footer-inner .cs-btn > ul:after { display:block; content:""; clear:both; }
+#footer .footer-inner .cs-btn > ul > li { float:left; }
+#footer .footer-inner .cs-btn > ul > li > a { display:inline-block; line-height:21px; padding:0 1px; font-weight:bold; font-size:16px; color:#000; vertical-align:top; }
+#footer .footer-inner .cs-btn > ul > li ~ li { margin-left:60px; }
+#footer .footer-inner .cs-btn > ul > li > a.link-outlink { position: relative; padding-right: 24px; }
+#footer .footer-inner .cs-btn > ul > li > a.link-outlink:after { content: ""; position: absolute; top: 50%; right: 0; width: 16px; height: 16px; margin-top: -8px; vertical-align: middle; background: url(http://samsung.com/sec/static/_images/common/icon-outlink.svg) no-repeat center center;}
+#footer .footer-inner .contact-info { position:absolute; top:24px; right:22px; }
+#footer .footer-inner .contact-info ul { padding:1px 0; }
+#footer .footer-inner .contact-info ul:after { content:""; display:block; clear:both; }
+#footer .footer-inner .contact-info ul li { float:left; padding-right:60px; }
+#footer .footer-inner .contact-info ul li ~ li { position:relative; padding:0 0 0 60px; }
+#footer .footer-inner .contact-info ul li ~ li:after { content:""; position:absolute; top:50%; left:0; width:1px; height:74px; margin-top:-37px; background:#d9d9d9; }
+#footer .footer-inner .contact-info ul li .tit { display:block; line-height:18px; padding-bottom:12px; font-size:14px; color:#000; }
+#footer .footer-inner .contact-info ul li .contact { display:inline-block; line-height:23px; font-weight:bold; font-size:18px; color:#000; }
+#footer .footer-inner .contact-info ul li .contact.mail { color: #2189FF; font-size: 16px; line-height: 21px; border-bottom: 1px solid #2189FF;}
+#footer .footer-inner .contact-info ul li .extra { padding-top:6px; font-size:13px; color:#707070; }
+#footer .footer-inner .site-info .info-links ul:after { content:""; display:block; clear:both; }
+#footer .footer-inner .site-info .info-links ul li { float:left; }
+#footer .footer-inner .site-info .info-links ul li ~ li { position:relative; margin-left:16px; padding-left:17px; }
+#footer .footer-inner .site-info .info-links ul li ~ li:after { content:""; position:absolute; top:50%; left:0; width:1px; height:12px; margin-top:-6px; background:#d9d9d9; }
+#footer .footer-inner .site-info .info-links a { display:inline-block; line-height:18px; padding:0 1px; font-weight:bold; font-size:14px; color:#000; }
+#footer .footer-inner .site-info .info-links .link-privacy { color:#2189FF; }
+#footer .footer-inner .site-info .info-links .link-outlink { position:relative; padding-right:24px; }
+#footer .footer-inner .site-info .info-links .link-outlink:after {  content:""; position:absolute; top:50%; right:0; width:16px; height:16px; margin-top:-8px; vertical-align:middle; background:url("http://samsung.com/sec/static/_images/common/icon-outlink.svg") no-repeat center center;}
+#footer .footer-inner .site-info > .copyright { line-height:13px; padding-bottom:15px; font-weight:bold; font-size:13px; }
+#footer .footer-inner .copyright { line-height:17px; font-weight:bold; font-size:13px; color:#707070; }
+#footer .footer-inner .copyright + .info-detail { padding-top:16px; }
+#footer .footer-inner .info-detail p { line-height:16px; font-size:12px; color: #707070;}
+#footer .footer-inner .info-detail p ~ p { margin-top:10px; }
+#footer .footer-inner .info-detail p:nth-child(3) { margin-top:8px; }
+#footer .footer-inner .info-detail p span { font:inherit; color:inherit; }
+#footer .footer-inner .info-detail p span:not(.wrap) { position:relative; margin-left:8px; padding-left:10px; }
+#footer .footer-inner .info-detail p span:not(.wrap):not(.comp-wrap):after { content:""; position:absolute; top:2px; left:0; width:1px; height:12px; background:#d9d9d9; }
+#footer .footer-inner .info-detail p span.comp-wrap { padding-left:0; margin-left: 8px; }
+#footer .footer-inner .info-detail p span:first-child { margin-left:0; padding-left:0; }
+#footer .footer-inner .info-detail p span:first-child:after { display:none; }
+#footer .footer-inner .info-detail .tel { color:inherit; }
+#footer .footer-inner .info-detail .comp { display:inline-block; width:94px; height:20px; line-height:20px; font-size:12px; color:#fff; text-align:center; background:#a6a6a6; border-radius:10px; border:1px solid #a6a6a6; }
+
+/* 오류 */
+.conbox-error { padding:100px 0 120px; text-align:center; }
+.conbox-error .error-inner { position:relative; padding-top:66px; display:inline-block; vertical-align:middle; text-align:center; }
+.conbox-error .error-inner:before { display:block; content:""; position:absolute; top:0; left:50%; width:48px; height:48px; margin-left:-24px; }
+.conbox-error .error-inner .txt-major { font-size:36px; line-height: 48px; color: #000; font-weight: bold; }
+.conbox-error .error-inner .txt-desc { margin-top:12px; font-size: 14px; line-height: 20px; color: #000; }
+.conbox-error .error-inner .txt-link { margin-top:24px; }
+.conbox-error .error-inner .txt-link .link { display:inline-block; vertical-align:middle; font-size:14px; line-height:18px; color:#2188FF; font-weight:bold; }
+
+/* 시스템 점검 */
+.conbox-error.system-check { }
+.conbox-error.system-check .error-inner { width:100%; max-width:1392px; padding:100px 0; background:#F7F7F7; border-radius:20px; }
+.conbox-error.system-check .error-inner:before { background:none; }
+.conbox-error.system-check .error-inner .icon-system-check { display:block; width:106px; height:75px; margin:0 auto 18px; background: url(http://samsung.com/sec/static/_images/common/icon-system-check.svg) no-repeat ; background-size: contain; }
+.conbox-error.system-check .error-inner .txt-desc .check-msg { display:block; margin:24px 0; color:#2188FF; font-size:16px; line-height:21px; }
+.conbox-error.system-check .error-inner .txt-desc .check-msg .msg-tit::after { content:" : ";}
+
+/* new 200428 */
+@media all and (max-width:1440px) and (min-width:1101px){
+    /* 헤더 */
+	#header .header-right > ul > li:last-child{display:none;}
+	#header .logoCollabo { height:5.5556vw; margin-right:2.7778vw; }
+    #header .logoCollabo .crossIcon{width:0.0694vw;height:1.9444vw;margin:0 1.0417vw;}
+    #header .logoCollabo .lastLogo{height:1.3194vw;}
+
+    /* 컨테이너 */
+    .content{max-width:100.0000vw;}
+    .hidden-area { height:6.9444vw; }
+    .conbox { min-height:22.2222vw; padding:7.2917vw 0 8.2639vw; }
+
+    /* 푸터 */
+    #footer .wrap-droplist .droplist-button { min-height: 40px; padding-left: 15px; font-size: 14px; }
+
+    /* 오류 */
+	.conbox-error { padding:6.9444vw 0 8.3333vw;  }
+	.conbox-error .error-inner {  padding-top:4.5833vw;    }
+	.conbox-error .error-inner:before {    top:0; left:50%; width:3.3333vw; height:3.3333vw; margin-left:-1.6667vw; }
+	.conbox-error .error-inner .txt-major { font-size:2.5000vw; line-height: 3.3333vw;   }
+	.conbox-error .error-inner .txt-desc { margin-top:0.8333vw; font-size: 0.9722vw; line-height: 1.3889vw;  }
+	.conbox-error .error-inner .txt-link { margin-top:1.6667vw; }
+    .conbox-error .error-inner .txt-link .link {   font-size:0.9722vw; line-height:1.2500vw;   }
+    
+    /* 시스템 점검 */
+    .conbox-error.system-check { }
+    .conbox-error.system-check .error-inner { width:100%; max-width:96.6667vw; padding:6.9444vw 0; background:#F7F7F7; border-radius:1.3889vw; }
+    .conbox-error.system-check .error-inner:before { background:none; }
+    .conbox-error.system-check .error-inner .icon-system-check {  width:7.3611vw; height:5.2083vw; margin:0 auto 1.2500vw;  }
+    .conbox-error.system-check .error-inner .txt-desc .check-msg {  margin:1.6667vw 0;  font-size:1.1111vw; line-height:1.4583vw; }
+    .conbox-error.system-check .error-inner .txt-desc .check-msg .msg-tit::after { content:" : ";}
+}
+
+@media all and (max-width:1280px){
+	
+	#header .s-inner { max-width:100%; height:100%; padding:0 24px; }
+	#header .logo { max-width:113px; height:100%; margin-right:10px; }
+	#header .logoCollabo { height:100%; margin-right:0; }
+    
+    #header .header-right > a { line-height:56px; font-size:16px; }
+    #header .header-right > .link { display:none; }
+    #header .header-right > .link-login { display:none; }
+    #header .header-right > .link-location { display:none; }
+    #header .header-right > .link-m-nav { display:inline-block; }
+
+    #footer .footer-inner .contact-info { position:relative; top:auto; right:auto; margin-top: 10px; margin-bottom:30px; padding-bottom:30px; }
+    #footer .footer-inner .contact-info:after { content:""; position:absolute; right:-24px; bottom:0; left:-24px; height:1px; background:#d9d9d9; }
+}
+
+/* new 200428 */
+@media all and (max-width:1100px) and (min-width:801px){
+    /* 헤더 */
+    /*#header .gnb { display:none; }*/
+    #header .gnb > ul > li{padding:0 10px;}
+    /*#header .header-right > ul > li:last-child{display:none;}*/
+    
+    #header .logoCollabo { height:7.2727vw; margin-right:3.6364vw; }
+    #header .logoCollabo .crossIcon{width:0.0909vw;height:2.5455vw;margin:0 1.3636vw;}
+    #header .logoCollabo .lastLogo{height:1.7273vw;}
+
+    /* 푸터 */
+    #footer .wrap-droplist .droplist-button { min-height: 40px; padding-left: 15px; font-size: 14px; }
+
+    /* 오류 */
+	.conbox-error { padding:9.0909vw 0 10.9091vw;  }
+	.conbox-error .error-inner {  padding-top:6.0000vw;    }
+	.conbox-error .error-inner:before {    top:0; left:50%; width:4.3636vw; height:4.3636vw; margin-left:-2.1818vw; }
+	.conbox-error .error-inner .txt-major { font-size:3.2727vw; line-height: 4.3636vw;   }
+	.conbox-error .error-inner .txt-desc { margin-top:1.0909vw; font-size: 1.2727vw; line-height: 1.8182vw;  }
+	.conbox-error .error-inner .txt-link { margin-top:2.1818vw; }
+    .conbox-error .error-inner .txt-link .link {   font-size:1.2727vw; line-height:1.6364vw;   }
+    
+    /* 시스템 점검 */
+    .conbox-error.system-check { }
+    .conbox-error.system-check .error-inner { width:100%; max-width:calc(100% - 48px); padding:9.0909vw 0; background:#F7F7F7; border-radius:1.8182vw; }
+    .conbox-error.system-check .error-inner:before { background:none; }
+    .conbox-error.system-check .error-inner .icon-system-check {  width:9.6364vw; height:6.8182vw; margin:0 auto 1.6364vw;  }
+    .conbox-error.system-check .error-inner .txt-desc .check-msg {  margin:2.1818vw 0;  font-size:1.4545vw; line-height:1.9091vw; }
+    .conbox-error.system-check .error-inner .txt-desc .check-msg .msg-tit::after { content:" : ";}
+}
+
+/* new 200428 */
+@media all and (max-width:800px){
+    #header { height:56px;z-index:101;}
+    #header .header-right > ul > li:first-child {display:none;}
+    #header .header-right > ul > li:last-child{display:inline-block;}
+    #header .header-right > ul > li > a{line-height:56px;}
+    #header .gnb { opacity:0;position:fixed;left:-370px;top:0;bottom:0;width:360px;padding-top:54px;background-color:#fff;float:none;z-index:22;-webkit-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+	#header .gnb > ul{height:auto;}
+	#header .gnb > ul > li{float:none;height:auto;padding: 0 12px;margin-top:5px;}
+	#header .gnb > ul > li:first-child{margin-top:0;}
+	#header .gnb > ul > li > a{line-height:40px;font-size:20px;font-weight:normal;}
+	#header .gnb > ul > li > a:before{display:none;}
+    #header .gnb.mo-Gnb{opacity:1;left:0;}
+    
+    /* 컨테이너 */
+    #container.type-visual { margin-top:-56px; }
+
+    /* 푸터 */
+    #footer .footer-inner .cs-btn > ul > li { float:none; }
+    #footer .footer-inner .cs-btn > ul > li ~ li { margin-top:16px; margin-left:0; }
+    #footer .footer-inner .contact-info ul li { float:none; padding-right:0; }
+    #footer .footer-inner .contact-info ul li ~ li { margin-top:12px; padding:13px 0 0; }
+    #footer .footer-inner .contact-info ul li ~ li:after { top:0; width:102px; height:1px; margin-top:0; }
+    
+    #footer .footer-inner .info-detail p { font-size:12px; }
+    #footer .footer-inner .info-detail p ~ p { margin-top:0; }
+    #footer .footer-inner .info-detail p span { display:block; margin-top:7px; }
+    #footer .footer-inner .info-detail p:nth-child(3) { margin-top: 11px;}
+    #footer .footer-inner .info-detail p span:not(.wrap) { margin-left:0; padding-left:0; }
+    #footer .footer-inner .info-detail p span:not(.wrap):not(.comp-wrap):after { display:none; }
+    #footer .footer-inner .info-detail p.copyright { margin-top:13px; }
+    #footer .footer-inner .info-detail p:first-child span:first-child { margin-top: 0;}
+    #footer .footer-inner .info-detail p span.mo-inline { display: inline-block; }
+
+    #footer.footer-b2c .footer-inner .info-detail p .wrap { display:block; margin-top:8px; }
+
+    #footer .footer-inner .info-detail p span.comp-wrap { display:inline-block; margin-left:7px; }
+    #footer.footer-b2c .footer-inner .info-detail p:nth-child(2) ~ p { line-height:18px; }
+    #footer.footer-b2c .footer-inner:not(.sitemap-links) { padding:30px 12px;}
+
+    #footer .footer-inner .info-links + .info-detail { padding-top: 30px;}
+    #footer .footer-inner { padding-left: 12px; padding-right: 12px;}
+
+    /* 오류 */
+	.conbox-error { border-top: 1px solid #ebebeb; padding: 48px 12px 80px; }
+	.conbox-error .error-inner { padding-top:46px; }
+	.conbox-error .error-inner:before { width:34px; height:34px; background-image:url(http://samsung.com/sec/static/_images/common/icon-error2-mo.svg); }
+    .conbox-error .error-inner .txt-major { font-size:26px; line-height:35px; }
+    
+    /* 시스템 점검 */
+    #header.line-wht { border-color:#fff; }
+    .conbox-error.system-check { height:calc(100vh - 68px); padding:0 12px; border-color:#fff; }
+    .conbox-error.system-check .error-inner { display:flex; flex-direction: column; justify-content: center; align-items: center; height:100%; padding:0 24px; border-radius:10px; }
+    .conbox-error.system-check .error-inner:before { background:none; }
+    .conbox-error.system-check .error-inner .txt-desc .check-msg { display:block; margin:24px 0; color:#2188FF; font-size:16px; line-height:21px; }
+    .conbox-error.system-check .error-inner .txt-desc .check-msg .msg-tit::after { content:" : ";}
+}
+
+@media all and (max-width:660px){
+    .conbox-error .error-inner .br, .conbox-error .error-inner .msg-tit { position:relative; display:block; }
+    .conbox-error.system-check .error-inner .txt-desc .check-msg .msg-tit::after { content:"";}
+}
+
+@media all and (max-width:414px){
+    .conbox-error .error-inner .br, .conbox-error .error-inner .msg-tit { position:relative; display:block; }
+    .conbox-error.system-check .error-inner .txt-desc .check-msg .msg-tit::after { content:"";}
+}
+
+@media all and (max-width:320px){ 
+    #header .gnb { width:320px; }
+    #footer.footer-b2c .footer-inner .cs-btn > ul > li ~ li { margin-left: 12px; padding-left: 13px; }
+
+    .conbox-error .error-inner .br-320 { position:relative; display:block; }
+    .conbox-error.system-check .error-inner .txt-desc  { word-break:keep-all; }
+}
+	
+
+

@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:'Samsung Sharp Sans';
+    font-style:normal;
+    font-weight:normal;
+    src:url('../_font/SamsungSharpSans-regular.TTF') format("truetype"),
+        url('../_font/SamsungSharpSans-regular.TTF') format("embedded-opentype");
+}
+@font-face {
+    font-family:'Samsung Sharp Sans';
+    font-style:normal;
+    font-weight:bold;
+    src:url('../_font/SamsungSharpSans-Bold.eot');
+    src:url('../_font/SamsungSharpSans-Bold.eot?#iefix') format("embedded-opentype"),
+        url('../_font/SamsungSharpSans-Bold.woff2') format("woff2"),
+        url('../_font/SamsungSharpSans-Bold.woff') format("woff"),
+        url('../_font/SamsungSharpSans-Bold.ttf') format("truetype");
+}
+
+
+@font-face {
+    font-family:'SamsungOneKorean';
+    font-style:normal;
+    font-weight:normal;
+    src:url('../_font/SamsungOneKorean-400.eot');
+    src:url('../_font/SamsungOneKorean-400.eot?#iefix') format("embedded-opentype"),
+        url('../_font/SamsungOneKorean-400.woff2') format("woff2"),
+        url('../_font/SamsungOneKorean-400.woff') format("woff"),
+        url('../_font/SamsungOneKorean-400.ttf') format("truetype");
+}
+@font-face {
+    font-family:'SamsungOneKorean';
+    font-style:normal;
+    font-weight:bold;
+    src:url('../_font/SamsungOneKorean-700.eot');
+    src:url('../_font/SamsungOneKorean-700.eot?#iefix') format("embedded-opentype"),
+        url('../_font/SamsungOneKorean-700.woff2') format("woff2"),
+        url('../_font/SamsungOneKorean-700.woff') format("woff"),
+        url('../_font/SamsungOneKorean-700.ttf') format("truetype");
+}
+
+/* @font-face {
+    font-family:'SamsungSharpSans';
+    font-style:normal;
+    font-weight:normal;
+    src:url('../_font/SamsungSharpSansBd.eot');
+    src:url('../_font/SamsungSharpSansBd.eot?#iefix') format("embedded-opentype"),
+		url('../_font/SamsungSharpSansBd.woff2') format("woff2"),
+		url('../_font/SamsungSharpSansBd.woff') format("woff");
+} */ /* IE에서 깨져 보임 */
+
+/* 삼성 'AS-IS'에서 적용된 폰트 */
+@font-face {
+    font-family:'samsungIcon';
+    font-style:normal;
+    font-weight:normal;
+    src:url('../_font/samsungIcon.woff') format("woff");
+}

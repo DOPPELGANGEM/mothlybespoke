@@ -1,0 +1,13 @@
+.main-popup{position:relative;overflow:hidden;}
+.main-popup .today-box{background:#fff}
+.main-popup .today-box .today-content{overflow:auto;}
+.main-popup .today-box .today-footer{position:fixed;bottom:0; width:90%;overflow:hidden;padding:10px 15px}
+.main-popup .today-box .today-footer .checkbox{float:left;margin:0;min-height:0}
+.main-popup .today-box .today-footer .checkbox label{display:inline-block;padding:0}
+.main-popup .today-box .today-footer .checkbox .checkbox-text{font-weight:400;font-size:14px;line-height:20px;color:#3c3c3c;display:inline-block;vertical-align:middle;margin-top:-10px;}
+
+.main-popup .today-box .today-footer .checkbox .checkbox-input{display:inline-block;width:20px;height:20px;margin-left:5px;z-index:-1}
+.main-popup .today-box .today-footer .checkbox .checkbox-input:focus+.checkbox-label .checkbox-text{color:#0077c8}
+.main-popup .today-box .today-footer .banner-close{float:right;font-weight:400;font-size:14px;color:#3c3c3c;margin:4px 0 0;padding:0;border:0;background:#fff}
+.main-popup .today-box .today-footer .banner-close:focus{color:#0077c8}
+.main-popup .today-box .today-footer .banner-close:hover {text-decoration: underline;font-weight: bold;}

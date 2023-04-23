@@ -1,0 +1,284 @@
+@charset "utf-8";
+html,body { min-height:100%; }
+html, body, div, h1, h2, h3, h4, h5, h6, span, object, iframe,
+ p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, a,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, textarea, select,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary, button,
+time, mark, audio, video {
+    margin:0; padding:0; border:0; outline:0; font-family:/*'Samsung Sharp Sans',*/ 'SamsungOneKorean','dotum',sans-serif; /*font-size:16px; */letter-spacing:-0.02em;/*color:#707070;*/ vertical-align:baseline; background:transparent;
+    box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box;
+    word-break: keep-all; /* keep-all 정은정프로 요청사항 */
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+body {
+    line-height:1; -webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none;
+    -webkit-font-smooting:antialiased; -moz-font-smoothing:grayscale;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+ol, ul, li { list-style:none; }
+
+blockquote, q { quotes:none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+
+/* change colours to suit your needs */
+ins { color:#000; text-decoration:none; background-color:#ff9; }
+
+/* change colours to suit your needs */
+mark { font-style:italic; color:#000; font-weight:bold; background-color:#ff9; }
+
+del { text-decoration:line-through; }
+
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+
+table { border-collapse:collapse; border-spacing:0; }
+caption{width:0;height:0;line-height:0;font-size:0;overflow:hidden;}
+legend { position:absolute; left:-9999px; top:-9999px; font-size:0; }
+em { font-style:normal; }
+/* change border colour to suit your needs */
+
+hr { display:block; height:1px; margin:1em 0; padding:0; border:0; border-top:1px solid #cccccc; }
+
+span, strong, input, select { vertical-align:middle; }
+strong { font-weight:bold; }
+
+/* Placeholder */
+/* Webkit */
+input::-webkit-input-placeholder { font-size:13px; color:#666; font-weight:300; }
+textarea::-webkit-input-placeholder { font-size:13px; color:#666; font-weight:300; }
+/* Firefox 4-18 */
+input:-moz-placeholder { font-size:13px; color:#666; font-weight:300; }
+textarea:-moz-placeholder { font-size:13px; color:#666; font-weight:300; }
+/* Firefox 19+ */
+input::-moz-placeholder { font-size:13px; color:#666; font-weight:300; }
+textarea::-moz-placeholder { font-size:13px; color:#666; font-weight:300; }
+/* IE10+ */
+input:-ms-input-placeholder { font-size:13px; color:#666; font-weight:300; }
+textarea:-ms-input-placeholder { font-size:13px; color:#666; font-weight:300; }
+
+/* A & Button */
+a { margin:0; padding:0; font-size:100%; color:#000; text-decoration:none; vertical-align:baseline; background:transparent; }
+a:hover { }
+button{border:0;border-radius:0;-webkit-border-radius:0;cursor:pointer;}
+button::-moz-focus-inner {padding:0;border:0;} /* 파이어폭스 버튼 내부 여백 제거 */
+a:focus,
+button:focus {outline: -webkit-focus-ring-color auto 1px; }
+
+img { max-width:100%; vertical-align:top; }
+
+input,select,button { vertical-align:middle; }
+
+input[type=text] {-webkit-appearance:none;background:#fff;height:26px;vertical-align:middle;border-radius:0;width:100%;}
+input[type=date] {-webkit-appearance:none;background:#fff;height:26px;vertical-align:middle;border-radius:0;width:100%;border:0;}
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+/* input:focus{outline:#fff solid thin;} */
+input[type=image], input[type=radio]{border:0;padding:0;}/*input[type=checkbox], */
+input[type=checkbox]{display:inline-block;}
+/*input[type=radio]{display:block;position:absolute;top:0;left:0;-webkit-appearance:radio;width:auto;height:auto;z-index:10;opacity:0;}*/
+
+/* input text */
+input[type="text"],
+input[type="password"] {height:35px;border:1px solid #ccc;text-indent:10px;color:#757575;font-size:13px;box-sizing:border-box;}
+/*input[type="text"]:focus,
+input[type="password"]:focus {background-color:#f3f3f3;}*/
+input[type="text"]:disabled,
+input[type="password"]:disabled {background-color:#e4e4e4 ;}
+
+/* radio / checkbox
+input[type="checkbox"] {display:none;}
+input[type="checkbox"] + label {display:inline-block;color:#717171;font-size:13px;line-height:20px;}
+input[type="checkbox"]:checked + label {color:#757575;}
+input[type="checkbox"] + label span {display:inline-block;width:14px;height:14px;margin:0 8px 0 0;vertical-align:middle;background:url('http://samsung.com/sec/static/_images/common/icon/check_radio_sheet.png') left top no-repeat;cursor:pointer;}
+input[type="checkbox"]:checked + label span {background-position:-14px top;}
+input[type="checkbox"]:disabled {pointer-events:none;}
+input[type="checkbox"]:disabled + label{color:#999;}
+input[type="checkbox"]:disabled + label span {background-position:-54px top;}
+input[type="checkbox"]:disabled:checked + label{color:#999;font-weight:normal;}
+input[type="checkbox"]:disabled:checked + label span{background-position:-71px top;}
+
+input[type="radio"] {display:none;}
+input[type="radio"] + label {display:inline-block;font-size:14px;color:#666;line-height:20px;font-weight:300;}
+input[type="radio"] + label span {display:inline-block;width:12px;height:12px;margin:0 8px 0 0;vertical-align:middle;background:url('http://samsung.com/sec/static/_images/common/icon/check_radio_sheet.png') -89px top no-repeat;cursor:pointer;}
+input[type="radio"]:checked + label {color:#000;}
+input[type="radio"]:checked + label span {background-position:-101px top;}
+input[type="radio"]:disabled + label{color:#999;}
+input[type="radio"]:disabled + label span {background-position:-113px top;}
+input[type="radio"]:disabled:checked + label span {background-position:-157px top;}
+*/
+
+/* input file */
+input[type="file"]{display:none;}
+
+/* hightlight none */
+input, textarea, button{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;outline:none;}
+
+input-placeholder { font-size:13px;}
+
+/* 포커스의 이동 확인을 위해 임시로 삽입 */
+/* :focus { background:rgba(206,0,0,0.1); outline:2px dotted rgba(206,0,0,0.5); } */
+
+@media all and (max-width:1440px) and (min-width:1101px){
+    /* html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i, a,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, button,
+    time, mark, audio, video { font-size:30px; }
+    input::-webkit-input-placeholder { font-size:24px; }
+    textarea::-webkit-input-placeholder { font-size:24px; }
+    input:-moz-placeholder { font-size:24px; }
+    textarea:-moz-placeholder { font-size:24px; }
+    input::-moz-placeholder { font-size:24px; }
+    textarea::-moz-placeholder { font-size:24px; }
+    input:-ms-input-placeholder { font-size:24px; }
+    textarea:-ms-input-placeholder { font-size:24px; }
+    input[type="text"],
+    input[type="password"] {height:66px; font-size:24px; } */
+
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+     i, a,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, button,
+    time, mark, audio, video { font-size:1.1111vw; }
+
+    /* Placeholder */
+    /* Webkit */
+    input::-webkit-input-placeholder { font-size:0.9028vw; }
+    textarea::-webkit-input-placeholder { font-size:0.9028vw; }
+    /* Firefox 4-18 */
+    input:-moz-placeholder { font-size:0.9028vw; }
+    textarea:-moz-placeholder { font-size:0.9028vw; }
+    /* Firefox 19+ */
+    input::-moz-placeholder { font-size:0.9028vw; }
+    textarea::-moz-placeholder { font-size:0.9028vw; }
+    /* IE10+ */
+    input:-ms-input-placeholder { font-size:0.9028vw; }
+    textarea:-ms-input-placeholder { font-size:0.9028vw; }
+
+    /* input text */
+    input[type="text"],
+    input[type="password"] {height:2.4306vw; font-size:0.9028vw; }
+}
+
+@media all and (max-width:1100px) and (min-width:801px){
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+     i, a,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, button,
+    time, mark, audio, video { font-size:1.4545vw; }
+
+    /* Placeholder */
+    /* Webkit */
+    input::-webkit-input-placeholder { font-size:1.1818vw; }
+    textarea::-webkit-input-placeholder { font-size:1.1818vw; }
+    /* Firefox 4-18 */
+    input:-moz-placeholder { font-size:1.1818vw; }
+    textarea:-moz-placeholder { font-size:1.1818vw; }
+    /* Firefox 19+ */
+    input::-moz-placeholder { font-size:1.1818vw; }
+    textarea::-moz-placeholder { font-size:1.1818vw; }
+    /* IE10+ */
+    input:-ms-input-placeholder { font-size:1.1818vw; }
+    textarea:-ms-input-placeholder { font-size:1.1818vw; }
+
+    /* input text */
+    input[type="text"],
+    input[type="password"] {height:3.1818vw; font-size:1.1818vw; }
+}
+
+@media all and (max-width:800px){
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+     i, a,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, button,
+    time, mark, audio, video { font-size:16px; }
+
+    /* Placeholder */
+    /* Webkit */
+    input::-webkit-input-placeholder { font-size:13px; }
+    textarea::-webkit-input-placeholder { font-size:13px; }
+    /* Firefox 4-18 */
+    input:-moz-placeholder { font-size:13px; }
+    textarea:-moz-placeholder { font-size:13px; }
+    /* Firefox 19+ */
+    input::-moz-placeholder { font-size:13px; }
+    textarea::-moz-placeholder { font-size:13px; }
+    /* IE10+ */
+    input:-ms-input-placeholder { font-size:13px; }
+    textarea:-ms-input-placeholder { font-size:13px; }
+
+    /* input text */
+    input[type="text"],
+    input[type="password"] {height:35px; font-size:13px; }
+}
+
+@media all and (max-width:414px){
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+     i, a,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary, button,
+    time, mark, audio, video { font-size:16px; }
+
+    /* Placeholder */
+    /* Webkit */
+    input::-webkit-input-placeholder { font-size:13px; }
+    textarea::-webkit-input-placeholder { font-size:13px; }
+    /* Firefox 4-18 */
+    input:-moz-placeholder { font-size:13px; }
+    textarea:-moz-placeholder { font-size:13px; }
+    /* Firefox 19+ */
+    input::-moz-placeholder { font-size:13px; }
+    textarea::-moz-placeholder { font-size:13px; }
+    /* IE10+ */
+    input:-ms-input-placeholder { font-size:13px; }
+    textarea:-ms-input-placeholder { font-size:13px; }
+
+    /* input text */
+    input[type="text"],
+    input[type="password"] {height:35px; font-size:13px; }
+}
